@@ -1,0 +1,23 @@
+blockquote {margin:0.5em; margin-left:2em; padding:0.5em; padding-left:2em;
+  background-color:#f0f0f0; border-left:solid #d0d0d0 2px; }
+ul {margin:0.5em; margin-left:2em; padding:0.5em; padding-left:2em;}
+li {margin-top:0.5em; margin-bottom:0.5em}
+h3 {margin-top:2em; padding-top: 0.5em; padding-bottom:1em; border-top:#c0c0c0 solid 2px}
+h4 {margin-top:1.5em; padding-top: 0.5em; padding-bottom:1em; border-top:#d8d8d8 dashed 1px}
+h5 {margin-top:1em; padding-top: 0.5em; padding-bottom:1em; border-top:#f0f0f0 dashed 1px}
+
+.hrl {border:0.5px dashed #e0e0e0; height:0.25px; background-color:#fff}
+pre {background-color:#f0f0f0; padding:0.5em; margin:0.5em; margin-left:3em}
+
+.task-list-item-checkbox input checkbox {
+background-color: #f00; color:#0f0;
+cursor: default;
+appearance: checkbox;
+box-sizing: border-box;
+}
+div .postIt {background-color:#ffffd0; padding:1em; margin:1em; border:1px solid #ddd; border-bottom:2px solid #999; border-right:"2px solid #999; markdown:1"}
+
+.tableau 		{padding:0.2em; padding-left:0.5em; padding-right:0.5em; color:#fff; background-color:#f80; font-size:90%}
+.tableau a:visited	{color:#fff}
+
+.sig {text-align:right; width:90%; margin-right:4em; markdown:1}
