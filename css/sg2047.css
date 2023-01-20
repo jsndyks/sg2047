@@ -9,6 +9,8 @@ h5 {margin-top:1em; padding-top: 0.5em; padding-bottom:1em; border-top:#f0f0f0 d
 .hrl {border:0.5px dashed #e0e0e0; height:0.25px; background-color:#fff}
 pre {background-color:#f0f0f0; padding:0.5em; margin:0.5em; margin-left:3em}
 
+.yellowBanner {background-color:#f8f8c6; padding:0.5em; color:#a44}
+
 .task-list-item-checkbox input checkbox {
 background-color: #f00; color:#0f0;
 cursor: default;
@@ -17,7 +19,8 @@ box-sizing: border-box;
 }
 div .postIt {background-color:#ffffd0; padding:1em; margin:1em; border:1px solid #ddd; border-bottom:2px solid #999; border-right:2px solid #999; markdown:1}
 
-.tableau 		{padding:0.2em; padding-left:0.5em; padding-right:0.5em; color:#fff; background-color:#f80; font-size:90%}
+.tableauOrange 		{padding:0.2em; padding-left:0.5em; padding-right:0.5em; color:#fff; background-color:#f80; font-size:90%}
+.tableau 		{padding:0.2em; padding-left:0.5em; padding-right:0.5em; color:#fff; background-color:#48b; font-size:90%}
 .tableau a:visited	{color:#fff}
 
 .sig {text-align:right; width:90%; margin-right:4em; markdown:1}
