@@ -19,7 +19,7 @@ box-sizing: border-box;
 }
 div .postIt {background-color:#ffffd0; padding:1em; margin:1em; border:1px solid #ddd; border-bottom:2px solid #999; border-right:2px solid #999; markdown:1}
 
-.tableauOrange 		{padding:0.2em; padding-left:0.5em; padding-right:0.5em; color:#fff; visited: background-color:#f80; font-size:90%}
+.tableauOrange 		{padding:0.2em; padding-left:0.5em; padding-right:0.5em; color:#fff; background-color:#f80; font-size:90%}
 .tableau 		{padding:0.2em; padding-left:0.5em; padding-right:0.5em; color:#fff; background-color:#48b; font-size:90%}
 .tableau a:link {color:#fff;}
 .tableau a:visited {color:#ccf;}
