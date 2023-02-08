@@ -27,3 +27,5 @@ div .postIt {background-color:#ffffd0; padding:1em; margin:1em; border:1px solid
 .tableau a:active {color:#fa6;}
 
 .sig {text-align:right; width:90%; margin-right:4em; markdown:1}
+
+.container-fluid {padding-left:1em; padding-right:1em; }
