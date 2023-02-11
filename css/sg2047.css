@@ -4,7 +4,7 @@ ul {margin:0.5em; margin-left:2em; padding:0.5em; padding-left:2em;}
 li {margin-top:0.5em; margin-bottom:0.5em}
 h3 {margin-top:2em; padding-top: 0.5em; padding-bottom:1em; border-top:#c0c0c0 solid 2px}
 h4 {margin-top:1.5em; padding-top: 0.5em; padding-bottom:1em; border-top:#d8d8d8 dashed 1px}
-h5 {margin-top:1em; padding-top: 0.5em; padding-bottom:1em; border-top:#f0f0f0 dashed 1px}
+h5 {margin-top:1em; padding-top: 0.5em; padding-bottom:1em; border-top:#f0f0f0 dashed 1px; clear:right}
 
 .hrl {border:0.5px dashed #e0e0e0; height:0.25px; background-color:#fff}
 pre {background-color:#f0f0f0; padding:0.5em; margin:0.5em; margin-left:3em}
