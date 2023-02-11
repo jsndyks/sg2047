@@ -30,4 +30,5 @@ div .postIt {background-color:#ffffd0; padding:1em; margin:1em; border:1px solid
 
 .container-fluid {padding-left:1em; padding-right:1em; }
 
-.imgR {float:right; margin-right:8px; border:1px solid #f8f8f8; clear:both}
+.imgR {float:right; margin-right:8px; border:1px solid #f8f8f8; clear:right}
+.clrR {clear:right}
