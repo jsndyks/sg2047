@@ -34,7 +34,7 @@ div .postIt {background-color:#ffffd0; padding:1em; margin:1em; border:1px solid
 .imgL {float:left; margin-right:8px; border:1px solid #f8f8f8; margin-left:1em}
 .clrR {clear:both}
 
-.bluePill, .greenPill {padding:1em; padding-top:2px; padding-bottom:2px}
+.bluePill, .greenPill {padding:1em; padding-top:2px; padding-bottom:2px; font-size:80%}
 .greenPill {background-color:#6ca}
 .bluePill {background-color:#6ac}
 .tableauMovie {padding:2px; margin-left:10%; border:1px solid #f0f0f0; width:400}
