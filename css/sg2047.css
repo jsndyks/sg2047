@@ -37,4 +37,4 @@ div .postIt {background-color:#ffffd0; padding:1em; margin:1em; border:1px solid
 .bluePill, .greenPill {padding:1em; padding-top:2px; padding-bottom:2px}
 .greenPill {background-color:#6ca}
 .bluePill {background-color:#6ac}
-.tableauMovie {padding:2px; margin-left:10%; border:1px solid #f0f0f0}
+.tableauMovie {padding:2px; margin-left:10%; border:1px solid #f0f0f0; width:400}
