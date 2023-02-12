@@ -32,3 +32,7 @@ div .postIt {background-color:#ffffd0; padding:1em; margin:1em; border:1px solid
 
 .imgR {float:right; margin-right:8px; border:1px solid #f8f8f8;}
 .clrR {clear:both}
+
+.bluePill, .greenPill {padding:4em; padding-top:2px; padding-bottom:2px}
+.bluePill {background-color:#6ca}
+.greenPill {background-color:#6ac}
