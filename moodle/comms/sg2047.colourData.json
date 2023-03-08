@@ -1,0 +1,65 @@
+colourData = [
+  {
+    class: 1,
+    hue0: 61,
+    sat: 100,
+    val: 85,
+    tH: "Hue (+40)",
+    tS: "Sat",
+    tV: "Val"
+  },
+  {
+    class: 2,
+    hue0: 44,
+    sat: 99,
+    val: 73,
+    tH: "Hue (+40)",
+    tS: "Sat",
+    tV: "Val"
+  },
+  {
+    class: 3,
+    hue0: 34,
+    sat: 99,
+    val: 65,
+    tH: "Hue (+40)",
+    tS: "Sat",
+    tV: "Val"
+  },
+  {
+    class: 4,
+    hue0: 25,
+    sat: 98,
+    val: 62,
+    tH: "Hue (+40)",
+    tS: "Sat",
+    tV: "Val"
+  },
+  {
+    class: 5,
+    hue0: 10,
+    sat: 97,
+    val: 58,
+    tH: "Hue (+40)",
+    tS: "Sat",
+    tV: "Val"
+  },
+  {
+    class: 6,
+    hue0: 0,
+    sat: 79,
+    val: 50,
+    tH: "Hue (+40)",
+    tS: "Sat",
+    tV: "Val"
+  },
+  {
+    class: 7,
+    hue0: 347,
+    sat: 100,
+    val: 35,
+    tH: "Hue (+40)",
+    tS: "Sat",
+    tV: "Val"
+  }
+]
