@@ -43,5 +43,5 @@ div .postIt {background-color:#ffffd0; padding:1em; margin:1em; border:1px solid
   border:1px solid #ddd; border-bottom:2px solid #999; border-right:2px solid #999; }
 
 .mdTable {background-color:#ffffff; padding-bottom:0.5em; padding-top:0.5em}
-.mdTable,th {background-color:#fbfbfb; padding:4px; border:1px solid #f8e8e8; ; font-size:90%}
-.mdTable,tr .mdTable,td {background-color:#ffffff; padding:4px; border:1px solid #e8e8e8; font-size:90%}
+.mdTable,tr,th {background-color:#f8f8f8; padding:4px; border:1px solid #e8e8e8; ; font-size:90%}
+.mdTable,tr,td {background-color:#ffffff; padding:4px; border:1px solid #e8e8e8; font-size:90%}
