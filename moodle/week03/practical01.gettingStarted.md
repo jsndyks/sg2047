@@ -2,7 +2,8 @@
 
 We will be learning to use _Tableau Desktop_ today - software that allows you to explore and present data through visualization.
 
-We would like you to work your way through the [Getting Started](https://www.tableau.com/learn/training/20224) tutorial videos. This series of short videos are just over **20-minutes** in length in total. They show you how to visualise, analyse and present an example [Sample - Superstores](https://www.tableau.com/sites/default/files/2021-05/Sample%20-%20Superstore.xls) data set, which you should download.
+We would like you to work your way through the [Getting Started](https://www.tableau.com/learn/training/20224) tutorial videos.
+This series of short videos are just over **20-minutes** in length in total. They show you how to visualise, analyse and present an example [Sample - Superstore](https://www.tableau.com/sites/default/files/2021-05/Sample%20-%20Superstore.xls) data set, which you should download.
 
 We expect you to **watch each video** with _Tableau Desktop_ running on your computer. You should complete each step shown in the videos in _Tableau Desktop_. You will need to **pause each video after each action** so that you can **try all of the features that are introduced for yourself**. You must keep up to date and follow the instructions and actions on screen as you watch.
 
@@ -68,7 +69,7 @@ So please stick with it and work through the tutorials step by step even though 
 1. **register** for the [Getting Started](https://www.tableau.com/learn/tutorials/on-demand/getting-started) introductory videos to Tableau<br/>
    _You will need to provide some details to register - City's postcode is **EC1V 0HB**_ <br/>
 
-1. **download** the [Sample - Superstores](https://www.tableau.com/sites/default/files/2021-05/Sample%20-%20Superstore.xls) spreadsheet from the Tableau site<br/>
+1. **download** the [Sample - Superstore](https://www.tableau.com/sites/default/files/2021-05/Sample%20-%20Superstore.xls) spreadsheet from the Tableau site<br/>
    _This is available from the link under the first [Getting Started](https://www.tableau.com/learn/tutorials/on-demand/getting-started) video._
    <br/> _Each **row** is a **record**, a thing for which we have some information._
    <br/> _Each **column** is a **data dimension**, a characteristic about the thing that we have some information about._ <br/>
@@ -76,7 +77,7 @@ So please stick with it and work through the tutorials step by step even though 
 1. **watch** the [Getting Started](https://www.tableau.com/learn/tutorials/on-demand/getting-started) video
 
 1. **follow** by **trying each step** so that you do (and learn) the basics by using _Tableau Desktop_<br/>
-   _**IMPORTANT:**_ <span style="color:#b44"><em>do not use the cloud based version of Tableau - please do this work in your own local file space using</em></span> _Tableau Desktop_.
+   _**IMPORTANT:**_ <span style="color:#b44"><em>do not use the cloud based version of Tableau - please do this work in your own local file space using</em></span> Tableau Desktop_.
    _You will need to frequently pause and replay the video to do exactly what is shown - copy what is going on and create the various graphics._
    _You may find it helpful to watch each video in full before going through the slower, step-by-step process of completing each of the actions for yourself. But make sure that you do go through the actions to recreate what you see on screen._ <br/>
 
@@ -107,7 +108,7 @@ Time spent getting comfortable with Tableau and its features **now** will reap r
 
 You should start the exercise in class and **must** complete the work before the next session.
 
-#### Checklist of Concepts
+<!-- #### Checklist of Concepts
 
 Having watched the video and worked through the examples you should **understand** the following concepts and **be able to use them** in Tableau Desktop.
 
@@ -115,7 +116,7 @@ We'd like you to make a copy of this list and cross each item off as you have ad
 
 These are all **essential concepts** that you will need to be able to use in _Tableau Desktop_ to succeed in the module.
 
-Once you have tried them out by following the video, check the box or cross it off!
+Once you have tried them out by following the video, check the box or cross it off! -->
 
 <!-- 2020
  - [ ] load an **Excel** file into Tableau - to 'connect' a data set
@@ -158,7 +159,7 @@ Once you have tried them out by following the video, check the box or cross it o
  - [ ] _create a **set**_
  - [ ] _combine data visually through a **dual axis**_
  -->
-
+<!-- 
 <style>
     .checkList {padding-left:4em; padding:2em;}
     .checkItem {padding:0.5em; padding-top:1.25em}
@@ -388,7 +389,7 @@ Once you have tried them out by following the video, check the box or cross it o
 </label>&nbsp;
 </div>
 
-</div>
+</div> -->
  <!-- checkList -->
 
 <!--
@@ -468,7 +469,7 @@ Much of the module will involve trying to select and design appropriate graphics
 
 So, once you can use Tableau, you'll need to engage fully to get good at this!
  -->
-
+<!-- 
 ### Tableau Demo
 
 Sometime soon, perhaps at the end of the session, maybe at the start, maybe next week or later on the course ... or perhaps on video (!) ... I'll be showing you how to do a few more important things.
@@ -531,7 +532,7 @@ Make sure you can do them too ...
 </label>&nbsp;
 </div>
 
-</div>
+</div> -->
 
 <!--
 - [ ] understand the concepts of **aggregation** & **detail** an use them in your graphics
@@ -545,6 +546,9 @@ Make sure you can do them too ...
 - [ ] _combine data visually_ through a **dual axis**
  -->
 
-Make sure you know these features well - you should practice them.
+Make sure you know these features well - you should practice them and use the [Checklist of Concepts](https://moodle4.city.ac.uk/mod/page/view.php?id=824679) to check that you have understood and used them.
 
 ---
+
+Jason Dykes<br/>
+11/02/2025
