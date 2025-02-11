@@ -1,0 +1,1570 @@
+<!DOCTYPE html><html><head>
+      <title>sg2047.week03.dna</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/j.dykes/.vscode/extensions/gicentre.markdown-preview-enhanced-with-litvis-0.31.0/node_modules/mume-with-litvis/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p,html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  300px/2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <link rel="stylesheet" href="https://jsndyks.github.io/sg2047/css/sg2047.css">
+<h3 class="mume-header" id="example-dna-tables">Example DNA Tables</h3>
+
+<p><em>Some example DNA tables in which we use <strong>Visual Variables</strong> to describe the encodings ...</em></p>
+<h4 class="mume-header" id="1-estonian-bar-chart">1. Estonian Bar Chart</h4>
+
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/moodle/week03/img/proportion-of-unemployed-using-specific-search-methods.png" style="width:500px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<h5 class="mume-header" id="layer">Layer</h5>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right"><strong>Graphic Is ...</strong></th>
+<th style="text-align:left"><a href="http://j.mp/estonianJobSearch">http://j.mp/estonianJobSearch</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right"><strong>Marks Are ...</strong></td>
+<td style="text-align:left">Bars of different colour and length</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>Things / Entities / Referents / Data Points Are ...</strong></td>
+<td style="text-align:left">Job Search Methods</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>Detail Is ...</strong></td>
+<td style="text-align:left">7 types</td>
+</tr>
+</tbody>
+</table>
+<h5 class="mume-header" id="encodings">Encodings</h5>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right">DATA CHANNEL</th>
+<th style="text-align:center">RESOLUTION</th>
+<th>VISUAL VARIABLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">Proportion of Job Seekers</td>
+<td style="text-align:center">Percentage</td>
+<td><em>Length</em></td>
+</tr>
+<tr>
+<td style="text-align:right">Proportion of Job Seekers</td>
+<td style="text-align:center">Rank</td>
+<td>Location (Y)</td>
+</tr>
+<tr>
+<td style="text-align:right">Job Search Method</td>
+<td style="text-align:center">Type (7 types)</td>
+<td>Colour Hue</td>
+</tr>
+<tr>
+<td style="text-align:right">Job Search Method</td>
+<td style="text-align:center">Type (7 types)</td>
+<td>Colour Lightness</td>
+</tr>
+<tr>
+<td style="text-align:right">Job Search Method</td>
+<td style="text-align:center">Type (7 types)</td>
+<td>Colour Saturation</td>
+</tr>
+</tbody>
+</table>
+<h5 class="mume-header" id="comments-">Comments ...</h5>
+
+<h6 class="mume-header" id="visual-variables">Visual Variables</h6>
+
+<p><em>Firstly, note that Length is not a visual variable!</em> <em>Think about the lecture and notes for some ideas on this ...</em></p>
+<p>Where bars are aligned, with a common starting point, I suggest that we consider this as an encoding that uses <em>Location</em> or <em>Position</em> (terms that I use interchangeably). The rationale is that when marks are aligned against a common starting point (as in a <em>bar chart</em>) we see and compare the <em>position</em> <strong>of the end of the bar</strong> and relate these, rather than making judgments about the overall length of the bar, which is a one-dimensional <em>Size</em> judgment.<br>
+Compare the <em>orange</em> bars below.</p>
+<p>Where bars are not aligned, we use a more challenging one-dimensional <em>Size</em> judgment.<br>
+Compare the <em>blue</em> bars or the <em>green</em> bars below.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">ALIGNED</th>
+<th style="text-align:center">NON-ALIGNED</th>
+<th style="text-align:right">NON-ALIGNED</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="80" height="20" style="margin:1px; padding:1px; background-color:rgb(255,192,64)"></td>
+<td style="text-align:center">&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="80" height="20" style="margin:1px; padding:1px; background-color:rgb(128,192,255)">&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</td>
+<td style="text-align:right">&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="80" height="20" style="margin:1px; padding:1px; background-color:rgb(128,224,64)">&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="120" height="20" style="margin:1px; padding:1px; background-color:rgb(255,192,64)">&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</td>
+<td style="text-align:center">&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="120" height="20" style="margin:1px; padding:1px; background-color:rgb(128,192,255)">&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="120" height="20" style="margin:1px; padding:1px; background-color:rgb(128,224,64)">&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</td>
+</tr>
+</tbody>
+</table>
+<p>So I would document the <em>DNA</em> of the bars in our chart as follows.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">DATA CHANNEL</th>
+<th style="text-align:center">RESOLUTION</th>
+<th>VISUAL VARIABLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">Proportion of Job Seekers</td>
+<td style="text-align:center">Percentage</td>
+<td>Location (X)</td>
+</tr>
+<tr>
+<td style="text-align:right">Proportion of Job Seekers</td>
+<td style="text-align:center">Rank</td>
+<td>Location (Y)</td>
+</tr>
+<tr>
+<td style="text-align:right">Job Search Method</td>
+<td style="text-align:center">Type (7 types)</td>
+<td>Colour Hue</td>
+</tr>
+<tr>
+<td style="text-align:right">Job Search Method</td>
+<td style="text-align:center">Type (7 types)</td>
+<td>Colour Lightness</td>
+</tr>
+<tr>
+<td style="text-align:right">Job Search Method</td>
+<td style="text-align:center">Type (7 types)</td>
+<td>Colour Saturation</td>
+</tr>
+</tbody>
+</table>
+<h6 class="mume-header" id="colours">Colours</h6>
+
+<p><em>Check the colours with an <a href="https://pinetools.com/image-color-picker">Online Image Color Picker</a> - there are a few of these applications around - to see which components of colour vary, and how.</em></p>
+<p>Let&apos;s look at these closely using the <strong>HSV</strong> colour definition model to look at the way the colours are composed of different <em>Hues</em> with varying levels of <em>Saturation</em> and <em>Value</em> (or <em>Lightness</em>) ...</p>
+<h6 class="mume-header" id="hsv">HSV</h6>
+
+<p>Here are the numbers detected using the <strong>HSV</strong> colour model, with the seven colours ordered from lightest (highest <em>Value</em> or <em>Lightness</em>) to darkest (Lowest <em>Value</em> or <em>Lightness</em>) ...</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">COLOUR</th>
+<th style="text-align:center">HUE</th>
+<th style="text-align:center">SATURATION</th>
+<th style="text-align:center">VALUE</th>
+<th style="text-align:left">RGB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(255,219,107)"></td>
+<td style="text-align:center">45</td>
+<td style="text-align:center">0.58</td>
+<td style="text-align:center"><strong>1.00</strong></td>
+<td style="text-align:left"><code style="font-size:80%">rgb(255,219,107)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(232,82,82)"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0.65</td>
+<td style="text-align:center"><strong>0.91</strong></td>
+<td style="text-align:left"><code style="font-size:80%">rgb(232,82,82)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(173,212,158)"></td>
+<td style="text-align:center">104</td>
+<td style="text-align:center">0.25</td>
+<td style="text-align:center"><strong>0.83</strong></td>
+<td style="text-align:left"><code style="font-size:80%">rgb(173,212,158)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(209,71,74)"></td>
+<td style="text-align:center">358</td>
+<td style="text-align:center">0.66</td>
+<td style="text-align:center"><strong>0.82</strong></td>
+<td style="text-align:left"><code style="font-size:80%">rgb(209,71,74)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(82,120,179)"></td>
+<td style="text-align:center">216</td>
+<td style="text-align:center">0.54</td>
+<td style="text-align:center"><strong>0.70</strong></td>
+<td style="text-align:left"><code style="font-size:80%">rgb(82,120,179)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(77,163,168)"></td>
+<td style="text-align:center">184</td>
+<td style="text-align:center">0.54</td>
+<td style="text-align:center"><strong>0.66</strong></td>
+<td style="text-align:left"><code style="font-size:80%">rgb(77,163,168)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(84,166,97)"></td>
+<td style="text-align:center">130</td>
+<td style="text-align:center">0.49</td>
+<td style="text-align:center"><strong>0.65</strong></td>
+<td style="text-align:left"><code style="font-size:80%">rgb(84,166,97)</code></td>
+</tr>
+</tbody>
+</table>
+<p>It&apos;s quite hard to differentiate, but darker colours do on the whole seem to be lower down the table.</p>
+<p>Now let&apos;s order them from most <em>saturated</em> to least <em>saturated</em> ...</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">COLOUR</th>
+<th style="text-align:center">HUE</th>
+<th style="text-align:center">SATURATION</th>
+<th style="text-align:center">VALUE</th>
+<th style="text-align:left">RGB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(209,71,74)"></td>
+<td style="text-align:center">358</td>
+<td style="text-align:center"><strong>0.66</strong></td>
+<td style="text-align:center">0.82</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(209,71,74)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(232,82,82)"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"><strong>0.65</strong></td>
+<td style="text-align:center">0.91</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(232,82,82)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(255,219,107)"></td>
+<td style="text-align:center">45</td>
+<td style="text-align:center"><strong>0.58</strong></td>
+<td style="text-align:center">1.00</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(255,219,107)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(82,120,179)"></td>
+<td style="text-align:center">216</td>
+<td style="text-align:center"><strong>0.54</strong></td>
+<td style="text-align:center">0.7</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(82,120,179)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(77,163,168)"></td>
+<td style="text-align:center">184</td>
+<td style="text-align:center"><strong>0.54</strong></td>
+<td style="text-align:center">0.66</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(77,163,168)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(84,166,97)"></td>
+<td style="text-align:center">130</td>
+<td style="text-align:center"><strong>0.49</strong></td>
+<td style="text-align:center">0.65</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(84,166,97)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(173,212,158)"></td>
+<td style="text-align:center">104</td>
+<td style="text-align:center"><strong>0.25</strong></td>
+<td style="text-align:center">0.83</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(173,212,158)</code></td>
+</tr>
+</tbody>
+</table>
+<p>Again, hard to see the variation, particularly as and the numbers do not differ much for the first 6 colours. However, we might be able to detect the final washed out green as being less saturated than the other colours!<br>
+<em>Saturation</em> is hard to detect when <em>Hue</em> (and <em>Lightness</em>) varies!</p>
+<h6 class="mume-header" id="hls-hsl">HLS (HSL!)</h6>
+
+<p>Here are the numbers detected using the alternative <strong>HLS</strong> (or <strong>HSL!</strong>) colour model, with the seven colours ordered from lightest (highest <em>Lightness</em>) to darkest (Lowest <em>Lightness</em>).</p>
+<p><strong>HLS</strong> (or <strong>HSL!</strong>, confusing eh?) is intended to relate more closely to <em>human perception</em> of colour and so should be a useful model to use when interpreting colours and thinking about visualization design choices ...</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">COLOUR</th>
+<th style="text-align:center">HUE</th>
+<th style="text-align:center">LIGHTNESS</th>
+<th style="text-align:center">SATURATION</th>
+<th style="text-align:left">RGB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(173,212,158)"></td>
+<td style="text-align:center">104</td>
+<td style="text-align:center"><strong>0.73</strong></td>
+<td style="text-align:center">0.38</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(173,212,158)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(255,219,107)"></td>
+<td style="text-align:center">45</td>
+<td style="text-align:center"><strong>0.71</strong></td>
+<td style="text-align:center">1.00</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(255,219,107)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(232,82,82)"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"><strong>0.61</strong></td>
+<td style="text-align:center">0.77</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(232,82,82)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(209,71,74)"></td>
+<td style="text-align:center">358</td>
+<td style="text-align:center"><strong>0.55</strong></td>
+<td style="text-align:center">0.60</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(209,71,74)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(82,120,179)"></td>
+<td style="text-align:center">216</td>
+<td style="text-align:center"><strong>0.51</strong></td>
+<td style="text-align:center">0.39</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(82,120,179)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(84,166,97)"></td>
+<td style="text-align:center">130</td>
+<td style="text-align:center"><strong>0.49</strong></td>
+<td style="text-align:center">0.32</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(84,166,97)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(77,163,168)"></td>
+<td style="text-align:center">184</td>
+<td style="text-align:center"><strong>0.48</strong></td>
+<td style="text-align:center">0.37</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(77,163,168)</code></td>
+</tr>
+</tbody>
+</table>
+<p>It&apos;s a different ordering to that produced with the <strong>HSV</strong> model and the two lightest colours do seem to be at the top of the table in this one! There is relatively little variation in lightness in the bottom 4 colours and it is hard to detect this visually.</p>
+<p>Here are the numbers for <em>Saturation</em> using the <strong>HLS</strong> (or <strong>HSL!</strong>) colour model, with the seven colours ordered from highest to lowest <em>Saturation</em> ...</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">COLOUR</th>
+<th style="text-align:center">HUE</th>
+<th style="text-align:center">LIGHTNESS</th>
+<th style="text-align:center">SATURATION</th>
+<th style="text-align:left">RGB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(255,219,107)"></td>
+<td style="text-align:center">45</td>
+<td style="text-align:center">0.71</td>
+<td style="text-align:center"><strong>1.00</strong></td>
+<td style="text-align:left"><code style="font-size:80%">rgb(255,219,107)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(232,82,82)"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0.61</td>
+<td style="text-align:center"><strong>0.77</strong></td>
+<td style="text-align:left"><code style="font-size:80%">rgb(232,82,82)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(209,71,74)"></td>
+<td style="text-align:center">358</td>
+<td style="text-align:center">0.55</td>
+<td style="text-align:center"><strong>0.60</strong></td>
+<td style="text-align:left"><code style="font-size:80%">rgb(209,71,74)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(82,120,179)"></td>
+<td style="text-align:center">216</td>
+<td style="text-align:center">0.51</td>
+<td style="text-align:center"><strong>0.39</strong></td>
+<td style="text-align:left"><code style="font-size:80%">rgb(82,120,179)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(173,212,158)"></td>
+<td style="text-align:center">104</td>
+<td style="text-align:center">0.73</td>
+<td style="text-align:center"><strong>0.38</strong></td>
+<td style="text-align:left"><code style="font-size:80%">rgb(173,212,158)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(77,163,168)"></td>
+<td style="text-align:center">184</td>
+<td style="text-align:center">0.48</td>
+<td style="text-align:center"><strong>0.37</strong></td>
+<td style="text-align:left"><code style="font-size:80%">rgb(77,163,168)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(84,166,97)"></td>
+<td style="text-align:center">130</td>
+<td style="text-align:center">0.49</td>
+<td style="text-align:center"><strong>0.32</strong></td>
+<td style="text-align:left"><code style="font-size:80%">rgb(84,166,97)</code></td>
+</tr>
+</tbody>
+</table>
+<p>The bottom two surprised me here - these seem quite rich dark colours. But the numbers tell us that they are relatively unsaturated and closer to <em>grey</em> than those above. I can just about get my head around the ideas that they are more <em>grey</em> (and so less saturated) than the colours above.</p>
+<p>There is some consistency with the other model in that the top 3 and bottom 4 colours are the same, but these different ways of measuring <em>Lightness</em> and <em>Saturation</em> do produce different results that are hard to detect when other aspects of colour vary.</p>
+<p>As I said, <strong>HSL/HLS</strong> colour definitions are intended to account for our perceptual capabilities, so we should be able to judge varying levels of of <em>Saturation</em> and <em>Lightness</em>. But, as you can see ...</p>
+<blockquote>
+<p><strong>it is very hard to detect variations in <em>Lightness</em> and <em>Saturation</em> when both vary and this is particularly challenging when the third component of colour (<em>Hue</em>) varies as well!</strong></p>
+</blockquote>
+<h6 class="mume-header" id="hls---varying-lightness-or-saturation">HLS - Varying Lightness OR Saturation</h6>
+
+<p>Just as an aside, it is <em>much easier</em> to detect variation in one colour component if we hold the others constant. Here we use <strong>HSL/HLS</strong> colour descriptions to vary a single <em>green</em> hue by its <em>Lightness</em> and then <em>Saturation</em>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">COLOUR</th>
+<th style="text-align:center">HUE</th>
+<th style="text-align:center">LIGHTNESS</th>
+<th style="text-align:center">SATURATION</th>
+<th style="text-align:left">RGB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(153,255,171)"></td>
+<td style="text-align:center">130</td>
+<td style="text-align:center"><strong>0.8</strong></td>
+<td style="text-align:center">1.0</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(153,255,171)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(102,255,128)"></td>
+<td style="text-align:center">130</td>
+<td style="text-align:center"><strong>0.7</strong></td>
+<td style="text-align:center">1.0</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(102,255,128)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(51,255,84)"></td>
+<td style="text-align:center">130</td>
+<td style="text-align:center"><strong>0.6</strong></td>
+<td style="text-align:center">1.0</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(51,255,84)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(0,255,43)"></td>
+<td style="text-align:center">130</td>
+<td style="text-align:center"><strong>0.5</strong></td>
+<td style="text-align:center">1.0</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(0,255,43)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(0,204,33)"></td>
+<td style="text-align:center">130</td>
+<td style="text-align:center"><strong>0.4</strong></td>
+<td style="text-align:center">1.0</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(0,204,33)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(0,153,26)"></td>
+<td style="text-align:center">130</td>
+<td style="text-align:center"><strong>0.3</strong></td>
+<td style="text-align:center">1.0</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(0,153,26)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(0,102,18)"></td>
+<td style="text-align:center">130</td>
+<td style="text-align:center"><strong>0.2</strong></td>
+<td style="text-align:center">1.0</td>
+<td style="text-align:left"><code style="font-size:80%">rgb(0,102,18)</code></td>
+</tr>
+</tbody>
+</table>
+<p>The colours get darker from top to bottom, right?</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">COLOUR</th>
+<th style="text-align:center">HUE</th>
+<th style="text-align:center">LIGHTNESS</th>
+<th style="text-align:center">SATURATION</th>
+<th style="text-align:center">RGB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(153,255,171)"></td>
+<td style="text-align:center">130</td>
+<td style="text-align:center">0.8</td>
+<td style="text-align:center"><strong>1.0</strong></td>
+<td style="text-align:center"><code style="font-size:80%">rgb(153,255,171)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(163,245,176)"></td>
+<td style="text-align:center">130</td>
+<td style="text-align:center">0.8</td>
+<td style="text-align:center"><strong>0.8</strong></td>
+<td style="text-align:center"><code style="font-size:80%">rgb(163,245,176)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(168,240,181)"></td>
+<td style="text-align:center">130</td>
+<td style="text-align:center">0.8</td>
+<td style="text-align:center"><strong>0.7</strong></td>
+<td style="text-align:center"><code style="font-size:80%">rgb(168,240,181)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(179,230,186)"></td>
+<td style="text-align:center">130</td>
+<td style="text-align:center">0.8</td>
+<td style="text-align:center"><strong>0.5</strong></td>
+<td style="text-align:center"><code style="font-size:80%">rgb(179,230,186)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(184,224,191)"></td>
+<td style="text-align:center">130</td>
+<td style="text-align:center">0.8</td>
+<td style="text-align:center"><strong>0.4</strong></td>
+<td style="text-align:center"><code style="font-size:80%">rgb(184,224,191)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(189,219,194)"></td>
+<td style="text-align:center">130</td>
+<td style="text-align:center">0.8</td>
+<td style="text-align:center"><strong>0.3</strong></td>
+<td style="text-align:center"><code style="font-size:80%">rgb(189,219,194)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="20" style="margin:1px; padding:1px; background-color:rgb(199,209,201)"></td>
+<td style="text-align:center">130</td>
+<td style="text-align:center">0.8</td>
+<td style="text-align:center"><strong>0.1</strong></td>
+<td style="text-align:center"><code style="font-size:80%">rgb(199,209,201)</code></td>
+</tr>
+</tbody>
+</table>
+<p>The colours get more washed out as <em>Saturation</em> decreases from top to bottom, right?</p>
+<p>Hopefully this gives a sense of what we are looking for!</p>
+<h6 class="mume-header" id="hls---varying-lightness">HLS - Varying Lightness</h6>
+
+<p>In the graphic (remember that - we&apos;re thinking about the <em>Estonia</em> graphic!) we have seven distinguishable colours in which <strong><em>Hue</em>, <em>Saturation</em> and <em>Lightness</em> all vary concurrently to produce differentiable shades</strong> for the seven different ways of finding work. But they do not vary particularly <em>systematically</em> - as they do for example in the tables above where in each case one component of colour changes sequentially in steps.</p>
+<p>In the Estonia graphics, we see two <em>Hues</em> in the reds range, two that are blues and two in the greens, with various levels of <em>Lightness</em> and <em>Saturation</em> to help distinguish the shades.</p>
+<div style="float:right">
+<img src="https://miro.medium.com/max/1400/1*npeihc9KMFCfg44g_Rv3Wg.png" width="300" style="padding-left:2em; padding-right:4em">
+</div>
+<p>As a reminder, remember that <em>Hue</em> varies in a circular fashion from <em>0-360</em>. Think of it as an angle, with <strong>0</strong> and <strong>360</strong> at the top and <em>180</em> at the bottom. This means that reds are at the top, greens are on the right and blues on the left.</p>
+<p>This short medium article has a nice image of the way that <em>HUE</em> varies : <a href="https://medium.com/@kouyo_machi/hsl-a-better-way-to-define-the-color-3512d0610186">HSL : A Better Way to Define the Color</a></p>
+<div style="clear:both"></div>
+<p>So, I think all that we can say about the use of colour in our graphic, to complete the DNA Table, is that <em>Job Search Method</em> is encoded using variations in <em>Hue</em>, <em>Saturation</em> and <em>Lightness</em> that produce differentiable colours ... meaning that 3 Visual Variables are used to encode one quality, with only 7 different variations.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">DATA CHANNEL</th>
+<th style="text-align:center">RESOLUTION</th>
+<th>VISUAL VARIABLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">Proportion of Job Seekers</td>
+<td style="text-align:center">Percentage</td>
+<td>Location (X)</td>
+</tr>
+<tr>
+<td style="text-align:right">Proportion of Job Seekers</td>
+<td style="text-align:center">Rank</td>
+<td>Location (Y)</td>
+</tr>
+<tr>
+<td style="text-align:right">Job Search Method</td>
+<td style="text-align:center">Type (7 types)</td>
+<td>Colour Hue</td>
+</tr>
+<tr>
+<td style="text-align:right">Job Search Method</td>
+<td style="text-align:center">Type (7 types)</td>
+<td>Colour Lightness</td>
+</tr>
+<tr>
+<td style="text-align:right">Job Search Method</td>
+<td style="text-align:center">Type (7 types)</td>
+<td>Colour Saturation</td>
+</tr>
+</tbody>
+</table>
+<p>I hope you can see that this is a bit inefficient!</p>
+<h5 class="mume-header" id="annotation">Annotation</h5>
+
+<p>We can see an <em>annotation</em> too!<br>
+There is a <em>grid</em> - a <em>non-data label</em> that helps interpret the marks that encode data.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">TYPE</th>
+<th style="text-align:center">INCLUSION</th>
+<th>INFORMATION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">Grid</td>
+<td style="text-align:center">Every 10% in X</td>
+<td>Subtle Dotted Line</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 class="mume-header" id="2-world-aidshiv-map">2. World AIDS/HIV Map</h4>
+
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/moodle/week03/img/hiv-death-rates.png" style="width:500px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<h5 class="mume-header" id="layer-1">Layer</h5>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right"><strong>Graphic Is ...</strong></th>
+<th style="text-align:left"><a href="http://j.mp/worldHIVAIDSdeathRate2017">http://j.mp/worldHIVAIDSdeathRate2017</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right"><strong>Marks Are ...</strong></td>
+<td style="text-align:left">Shapes that vary in size, position and colour.</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>Things / Entities / Referents / Data Points Are ...</strong></td>
+<td style="text-align:left">Areas of the World for which data are aggregated</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>Detail Is ...</strong></td>
+<td style="text-align:left">Country</td>
+</tr>
+</tbody>
+</table>
+<h5 class="mume-header" id="encodings-1">Encodings</h5>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right">DATA CHANNEL</th>
+<th style="text-align:center">RESOLUTION</th>
+<th>VISUAL VARIABLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">Death Rate</td>
+<td style="text-align:center">Categories (varying sizes 10-100 per 100,000)</td>
+<td>Hue</td>
+</tr>
+<tr>
+<td style="text-align:right">Death Rate</td>
+<td style="text-align:center">Categories (varying sizes 10-100 per 100,000)</td>
+<td>Lightness</td>
+</tr>
+<tr>
+<td style="text-align:right">Data Availability</td>
+<td style="text-align:center">Binary</td>
+<td>Saturation</td>
+</tr>
+<tr>
+<td style="text-align:right">Geography</td>
+<td style="text-align:center">Country</td>
+<td>Location</td>
+</tr>
+<tr>
+<td style="text-align:right">Land Area</td>
+<td style="text-align:center">High</td>
+<td>Size</td>
+</tr>
+<tr>
+<td style="text-align:right">Shape</td>
+<td style="text-align:center">High</td>
+<td>Shape</td>
+</tr>
+</tbody>
+</table>
+<h5 class="mume-header" id="comments--1">Comments ...</h5>
+
+<h6 class="mume-header" id="location">Location</h6>
+
+<p>It&apos;s fine to describe the use of position to represent geographic location like this ...</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">DATA CHANNEL</th>
+<th style="text-align:center">RESOLUTION</th>
+<th>VISUAL VARIABLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">Geography</td>
+<td style="text-align:center">Country</td>
+<td>Location</td>
+</tr>
+</tbody>
+</table>
+<p>We could be a bit more specific, but <em>X</em> and <em>Y</em> are not used <em>exactly</em> to represent <em>Longitude</em> and <em>Latitude</em> - the data are transformed using a map projection and it&apos;s not always easy to figure out <a href="https://ncxiao.github.io/map-projections/">which one</a>!</p>
+<p>So, let&apos;s just go with this to show that <em>Longitude</em> and <em>Latitude</em> are broadly represented with <em>X</em> and <em>Y</em>, without defining the exact projection - that&apos;s the <em>essential DNA</em>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">DATA CHANNEL</th>
+<th style="text-align:center">RESOLUTION</th>
+<th>VISUAL VARIABLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">Longitude</td>
+<td style="text-align:center">Country</td>
+<td>Location (X, projected)</td>
+</tr>
+<tr>
+<td style="text-align:right">Latitude</td>
+<td style="text-align:center">Country</td>
+<td>Location (Y, projected)</td>
+</tr>
+</tbody>
+</table>
+<h6 class="mume-header" id="colour">Colour</h6>
+
+<p><em>Check the colours with an <a href="https://pinetools.com/image-color-picker">Online Image Color Picker</a></em> - here is what I get!</p>
+<p>This graphic uses colour a bit differently - with colour components varying sequentially and two of the colour visual variables show more than one <em>data channel</em>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">COLOUR</th>
+<th style="text-align:center">HUE</th>
+<th style="text-align:center">LIGHTNESS</th>
+<th style="text-align:center">SATURATION</th>
+<th style="text-align:center">RGB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(237,237,237)"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"><strong>0.93</strong></td>
+<td style="text-align:center"><strong>0.00</strong></td>
+<td style="text-align:center"><code>rgb(237,237,237)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(255,255,184)"></td>
+<td style="text-align:center">60</td>
+<td style="text-align:center"><strong>0.86</strong></td>
+<td style="text-align:center"><strong>1.00</strong></td>
+<td style="text-align:center"><code>rgb(255,255,184)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(255,217,128)"></td>
+<td style="text-align:center">42</td>
+<td style="text-align:center"><strong>0.75</strong></td>
+<td style="text-align:center"><strong>0.98</strong></td>
+<td style="text-align:center"><code>rgb(255,217,128)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(252,179,89)"></td>
+<td style="text-align:center">32</td>
+<td style="text-align:center"><strong>0.67</strong></td>
+<td style="text-align:center"><strong>0.98</strong></td>
+<td style="text-align:center"><code>rgb(252,179,89)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(252,140,74)"></td>
+<td style="text-align:center">23</td>
+<td style="text-align:center"><strong>0.64</strong></td>
+<td style="text-align:center"><strong>0.97</strong></td>
+<td style="text-align:center"><code>rgb(252,140,74)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(237,61,43)"></td>
+<td style="text-align:center">5</td>
+<td style="text-align:center"><strong>0.55</strong></td>
+<td style="text-align:center"><strong>0.85</strong></td>
+<td style="text-align:center"><code>rgb(237,61,43)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(189,5,41)"></td>
+<td style="text-align:center">348</td>
+<td style="text-align:center"><strong>0.38</strong></td>
+<td style="text-align:center"><strong>0.95</strong></td>
+<td style="text-align:center"><code>rgb(189,5,41)</code></td>
+</tr>
+</tbody>
+</table>
+<p>So, presence or absence of data is shown with <em>Saturation</em>, which is <em>high</em> where we have data (resulting in <em>rich</em> colours with detectable and differentiable hues) and <em>low</em> where there is data, which gives us <em>grey</em>.</p>
+<p><em>Hue</em> varies from 60 round the hue-wheel through zero to 348. This is an ordered sequence from yellow to red that matches the sequence in the data values. That makes sense and enables us to see! It lets us detect and interpret the order in the categories on the map.</p>
+<p><em>Lightness</em> also decreases in order with the categories of data as numbers increase.</p>
+<p>So two <em>visual variables</em> (two components of colour) are used in a complimentary way to show one <em>data channel</em>, and the third is used to show a different <em>data channel</em>.</p>
+<hr>
+<h4 class="mume-header" id="3-women-in-top-income-groups-uk">3. Women in Top Income Groups, UK</h4>
+
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/moodle/week03/img/share-of-women-in-top-income-groups-atkinson-casarico-voitchovsky-2018.png" style="width:500px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<h5 class="mume-header" id="layer-2">Layer</h5>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right"><strong>Graphic Is ...</strong></th>
+<th style="text-align:left"><a href="http://j.mp/ukWomenInTopIncomeGroups">http://j.mp/ukWomenInTopIncomeGroups</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right"><strong>Marks Are ...</strong></td>
+<td style="text-align:left">Points that vary in colour and position - connected by lines</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>Things / Entities / Referents / Data Points Are ...</strong></td>
+<td style="text-align:left">Income groups and their proportion of female members at particular times</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>Detail Is ...</strong></td>
+<td style="text-align:left">Categories (varies, 6 categories), year</td>
+</tr>
+</tbody>
+</table>
+<h5 class="mume-header" id="encodings-2">Encodings</h5>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right">DATA CHANNEL</th>
+<th style="text-align:center">RESOLUTION</th>
+<th>VISUAL VARIABLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">Time</td>
+<td style="text-align:center">Year</td>
+<td>Location (X)</td>
+</tr>
+<tr>
+<td style="text-align:right">Percentage</td>
+<td style="text-align:center">Two Decimal Places</td>
+<td>Location (Y)</td>
+</tr>
+<tr>
+<td style="text-align:right">Income Group</td>
+<td style="text-align:center">Categories (varies, 6 categories)</td>
+<td>Lightness</td>
+</tr>
+</tbody>
+</table>
+<h5 class="mume-header" id="annotation-1">Annotation</h5>
+
+<p>We have a series of annotating <em>marks</em> that relate data points in this graphic.</p>
+<p>We can describe this annotation as follows ...</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">TYPE</th>
+<th style="text-align:center">COMMON</th>
+<th>CHANGES</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">Link</td>
+<td style="text-align:center">Income Group</td>
+<td>Time</td>
+</tr>
+</tbody>
+</table>
+<p>So, the annotation marks link data points with <em>common</em> <em>Income Group</em> (in temporal order) as <em>Time</em> <em>changes</em>.</p>
+<h5 class="mume-header" id="comments--2">Comments ...</h5>
+
+<p><em>Check the colours with an <a href="https://pinetools.com/image-color-picker">Online Image Color Picker</a></em></p>
+<p><em>How would this look?</em><br>
+Can you think about the effect that this alternative description of an annotation might have on the graphic?</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">TYPE</th>
+<th style="text-align:center">COMMON</th>
+<th>CHANGES</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">Link</td>
+<td style="text-align:center">Time</td>
+<td>Income Group</td>
+</tr>
+</tbody>
+</table>
+<p>What would we see with this new annotation?</p>
+<hr>
+<h4 class="mume-header" id="4-average-learning-outcomes-vs-gdp-per-capita-2015">4. Average learning outcomes vs GDP per capita, 2015</h4>
+
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/moodle/week03/img/learning-outcomes-vs-gdp-per-capita.png" style="width:500px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<h5 class="mume-header" id="layer-3">Layer</h5>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right"><strong>Graphic Is ...</strong></th>
+<th style="text-align:left"><a href="https://ourworldindata.org/grapher/learning-outcomes-vs-gdp-per-capita">https://ourworldindata.org/grapher/learning-outcomes-vs-gdp-per-capita</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right"><strong>Marks Are ...</strong></td>
+<td style="text-align:left">Circles that vary in position, size and colour</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>Things / Entities / Referents / Data Points Are ...</strong></td>
+<td style="text-align:left">Areas of the World for which data are aggregated in 2015</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>Detail Is ...</strong></td>
+<td style="text-align:left">Country</td>
+</tr>
+</tbody>
+</table>
+<h5 class="mume-header" id="encodings-3">Encodings</h5>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right">DATA CHANNEL</th>
+<th style="text-align:center">RESOLUTION</th>
+<th>VISUAL VARIABLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">GDP Per Capita (log scaling)</td>
+<td style="text-align:center">Numeric, continuous</td>
+<td>Location (X)</td>
+</tr>
+<tr>
+<td style="text-align:right">Average Learning Outcome Score</td>
+<td style="text-align:center">Numeric, continuous</td>
+<td>Location (Y)</td>
+</tr>
+<tr>
+<td style="text-align:right">Population (assumed!)</td>
+<td style="text-align:center">High, unknown</td>
+<td>Size</td>
+</tr>
+<tr>
+<td style="text-align:right">Geography</td>
+<td style="text-align:center">Continent (6 categories)</td>
+<td>Hue</td>
+</tr>
+</tbody>
+</table>
+<h5 class="mume-header" id="colour-1">Colour</h5>
+
+<p>Here&apos;s a colour table for the 6 shades used in the graphic.<br>
+<em>Lightness</em> varies very little - with just the <em>red</em> shade for <em>North America</em> being <em>lighter</em> (and so more <em>salient</em> or visible) than the others.</p>
+<p><em>Saturation</em> is quite low, these are muted colours (if they were lighter we would call them &apos;pastel&apos;), with once again the <em>red</em> shade for <em>North America</em> being a little more <em>Saturated</em>, which makes it stand out a bit.</p>
+<p>On the whole though, <em>Hue</em> is predominantly being used here to differentiate between continents, and so I would probably suggest that this is the component of colour that we add to the DNA table. It&apos;s the one that dominates and varies systematically to encode data.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">COLOUR</th>
+<th style="text-align:center">HUE</th>
+<th style="text-align:center">LIGHTNESS</th>
+<th style="text-align:center">SATURATION</th>
+<th style="text-align:center">RGB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(145,64,135)"></td>
+<td style="text-align:center">307</td>
+<td style="text-align:center">0.41</td>
+<td style="text-align:center">0.39</td>
+<td style="text-align:center"><code>rgb(145,64,135)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(48,133,135)"></td>
+<td style="text-align:center">181</td>
+<td style="text-align:center">0.36</td>
+<td style="text-align:center">0.47</td>
+<td style="text-align:center"><code>rgb(48,133,135)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(77,92,120)"></td>
+<td style="text-align:center">217</td>
+<td style="text-align:center">0.38</td>
+<td style="text-align:center">0.21</td>
+<td style="text-align:center"><code>rgb(77,92,120)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(222,79,79)"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0.59</td>
+<td style="text-align:center">0.68</td>
+<td style="text-align:center"><code>rgb(222,79,79)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(166,97,64)"></td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">0.45</td>
+<td style="text-align:center">0.44</td>
+<td style="text-align:center"><code>rgb(166,97,64)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(145,41,54)"></td>
+<td style="text-align:center">353</td>
+<td style="text-align:center">0.37</td>
+<td style="text-align:center">0.56</td>
+<td style="text-align:center"><code>rgb(145,41,54)</code></td>
+</tr>
+</tbody>
+</table>
+<p>This is actually a pretty good design decision, because it leaves <em>Lightness</em> available for another data channel. Imagine we had a binary data channel like <em>GDP change</em>. We could vary the <em>Lightness</em> of each of our colours to show this distinction (darker for increase, lighter for decrease, for example), and still differentiate the <em>Hues</em>, as shown below.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">COLOUR</th>
+<th style="text-align:center">HUE</th>
+<th style="text-align:center">LIGHTNESS</th>
+<th style="text-align:center">SATURATION</th>
+<th style="text-align:center">RGB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(227,184,219)"></td>
+<td style="text-align:center">307</td>
+<td style="text-align:center">0.8</td>
+<td style="text-align:center">0.39</td>
+<td style="text-align:center"><code>rgb(227,184,219)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(179,227,227)"></td>
+<td style="text-align:center">181</td>
+<td style="text-align:center">0.8</td>
+<td style="text-align:center">0.47</td>
+<td style="text-align:center"><code>rgb(179,227,227)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(194,201,214)"></td>
+<td style="text-align:center">217</td>
+<td style="text-align:center">0.8</td>
+<td style="text-align:center">0.21</td>
+<td style="text-align:center"><code>rgb(194,201,214)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(240,168,168)"></td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0.8</td>
+<td style="text-align:center">0.68</td>
+<td style="text-align:center"><code>rgb(240,168,168)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(227,196,181)"></td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">0.8</td>
+<td style="text-align:center">0.44</td>
+<td style="text-align:center"><code>rgb(227,196,181)</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(232,176,184)"></td>
+<td style="text-align:center">353</td>
+<td style="text-align:center">0.8</td>
+<td style="text-align:center">0.56</td>
+<td style="text-align:center"><code>rgb(232,176,184)</code></td>
+</tr>
+</tbody>
+</table>
+<p>This would allow us to add an encoding to show more data variation, and so we <em>could</em> add a row to the <em>DNA Table</em>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">DATA CHANNEL</th>
+<th style="text-align:center">RESOLUTION</th>
+<th>VISUAL VARIABLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">GDP Per Capita Increasing</td>
+<td style="text-align:center">Binary</td>
+<td>Lightness</td>
+</tr>
+</tbody>
+</table>
+<p>This is called a <em>BiVariate</em> colour encoding, as different components of colour are being used to show two data channels concurrently.</p>
+<h5 class="mume-header" id="size">Size</h5>
+
+<p>I can&apos;t find any indication on the graphic that explains how <em>Size</em> is being used.<br>
+What does this encode?<br>
+I <em>guess</em> it&apos;s population?<br>
+So I have added that and &quot;<em>assumed</em>&quot; to the <em>DNA Table</em>.<br>
+We don&apos;t always know!</p>
+<h5 class="mume-header" id="location-1">Location</h5>
+
+<p>Note that the <em>X axis</em> is on a log scale!<br>
+This is a significant transformation of the data and has a big effect on its visual representation.<br>
+Compare the <em>linear</em> and <em>log</em> scalings!</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">DATA CHANNEL</th>
+<th style="text-align:center">RESOLUTION</th>
+<th>VISUAL VARIABLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">GDP Per Capita (log scaling)</td>
+<td style="text-align:center">Numeric, continuous</td>
+<td>Location (X)</td>
+</tr>
+</tbody>
+</table>
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/moodle/week03/img/learning-outcomes-vs-gdp-per-capita.png" style="width:50%; margin-left:20%; margin-right:20%; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<p>We can expect linear scaling as a default.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">DATA CHANNEL</th>
+<th style="text-align:center">RESOLUTION</th>
+<th>VISUAL VARIABLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">GDP Per Capita</td>
+<td style="text-align:center">Numeric, continuous</td>
+<td>Location (X)</td>
+</tr>
+</tbody>
+</table>
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/moodle/week03/img/learning-outcomes-vs-gdp-per-capita-linear.png" style="width:50%; margin-left:20%; margin-right:20%; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<p>The only difference between the two graphics is the <em>log()</em> transformation applied to the <em>Position</em> encoding used on the <em>X-Axis</em> in the original. <em>Watch out for these!</em></p>
+<h5 class="mume-header" id="annotation-2">Annotation</h5>
+
+<p>Once again, we can see an <em>annotation</em>!<br>
+There is a <em>grid</em> - a <em>non-data label</em> that helps interpret the marks that encode data.<br>
+The grid is in <em>X</em> and <em>Y</em> this time.</p>
+<p>We also have <em>text</em> labels.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">TYPE</th>
+<th style="text-align:left">INCLUSION</th>
+<th>INFORMATION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">Grid</td>
+<td style="text-align:left">Round Numbers on log Scale (X)<br>50 Points on Student Achievement Tests (Y)</td>
+<td>Subtle Dotted Line</td>
+</tr>
+<tr>
+<td style="text-align:right">Text</td>
+<td style="text-align:left">Selected Data Points</td>
+<td>Country name, coloured by continent</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 class="mume-header" id="5-average-learning-outcomes-vs-gdp-per-capita-2010-to-2015">5. Average learning outcomes vs GDP per capita, 2010 to 2015</h4>
+
+<p>Let&apos;s look at a different version of the graphic we considered above - this time a version that shows change over time, with many of the same encodings, but some additional <em>annotations</em> to show relationships between data points at different times.</p>
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/moodle/week03/img/learning-outcomes-vs-gdp-per-capita-2010-2015.png" style="width:500px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<h5 class="mume-header" id="layer-4">Layer</h5>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right"><strong>Graphic Is ...</strong></th>
+<th style="text-align:left"><a href="https://ourworldindata.org/grapher/learning-outcomes-vs-gdp-per-capita?time=2010..2015">https://ourworldindata.org/grapher/learning-outcomes-vs-gdp-per-capita?time=2010..2015</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right"><strong>Marks Are ...</strong></td>
+<td style="text-align:left">Circles that vary in position and colour</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>Things / Entities / Referents / Data Points Are ...</strong></td>
+<td style="text-align:left">Areas of the World for which data are aggregated in 2010 and 2015</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>Detail Is ...</strong></td>
+<td style="text-align:left">Country, 5 years</td>
+</tr>
+</tbody>
+</table>
+<h5 class="mume-header" id="encodings-4">Encodings</h5>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right">DATA CHANNEL</th>
+<th style="text-align:center">RESOLUTION</th>
+<th>VISUAL VARIABLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">GDP Per Capita (log scaling)</td>
+<td style="text-align:center">Numeric, continuous</td>
+<td>Location (X)</td>
+</tr>
+<tr>
+<td style="text-align:right">Average Learning Outcome Score</td>
+<td style="text-align:center">Numeric, continuous</td>
+<td>Location (Y)</td>
+</tr>
+<tr>
+<td style="text-align:right">Geography</td>
+<td style="text-align:center">Continent (6 categories)</td>
+<td>Hue</td>
+</tr>
+</tbody>
+</table>
+<h5 class="mume-header" id="colour-2">Colour</h5>
+
+<p>Use of colour is the same as above.</p>
+<h5 class="mume-header" id="position">Position</h5>
+
+<p><em>Position</em> is used in the same way as above.</p>
+<h5 class="mume-header" id="size-1">Size</h5>
+
+<p><em>Size</em> is no longer used, so we remove this encoding from the <em>DNA Table</em> and are accordingly unable to compare populations with this graphic.</p>
+<p>Presumably this is because we now have more information in the graphic - more points, plus annotations - and it would have been cluttered and uninterpretable with this additional population information.</p>
+<p>This is a good example of a design decision that involves <em>design trade-off</em> :</p>
+<ul>
+<li><strong>Do we add more data about how things changed over time, and if we do, do we need to remove data about population?</strong></li>
+</ul>
+<p>The designer decided on <em>YES</em> in each case here, and I hope you can see how these decisions are reflected in our tables.</p>
+<h5 class="mume-header" id="annotation-3">Annotation</h5>
+
+<p>We still have the <em>text</em> labels that show some of the country names.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">TYPE</th>
+<th style="text-align:left">INCLUSION</th>
+<th>INFORMATION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">Grid</td>
+<td style="text-align:left">Round Numbers on log Scale (X)<br>50 Points on Student Achievement Tests (Y)</td>
+<td>Subtle Dotted Line</td>
+</tr>
+<tr>
+<td style="text-align:right">Text</td>
+<td style="text-align:left">Selected Data Points</td>
+<td>Country name, coloured by continent</td>
+</tr>
+</tbody>
+</table>
+<p>But we also have a series of annotating <em>marks</em> that <em>relate</em> data points in this version of the graphic.</p>
+<p>We can describe this annotation as follows ...</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">TYPE</th>
+<th style="text-align:center">COMMON</th>
+<th>CHANGES</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">Link</td>
+<td style="text-align:center">Country</td>
+<td>Time</td>
+</tr>
+</tbody>
+</table>
+<p>So, annotation marks link points with <em>common</em> <em>Country</em> (in temporal order) as <em>Time</em> <em>changes</em>.</p>
+<p>The result is a <em>connected scatter plot</em> ... and that&apos;s what our DNA table describes.</p>
+<hr>
+<p><strong>Jason Dykes</strong> &#xA0;</p>
+<p>11/02/25</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
