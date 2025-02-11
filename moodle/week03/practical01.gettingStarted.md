@@ -36,13 +36,13 @@ This should take **2 or 3 hours** in total and is **essential** grounding for th
 
 #### Start Tableau ...
 
-You will need to start a copy of _Tableau Desktop_, which is available on the _Windows_ computers at _City, University of London_.
+You will need to start a copy of _Tableau Desktop_, which is available on the _Windows_ computers _in the labs at the University_.
 
-As a student at City, you can also get hold a free copy of the _Tableau Desktop_ visualization software use on your laptop or at home, to help you learn and to complete your coursework.<br/>Instructions are here - _[Tableau Desktop](https://moodle.city.ac.uk/mod/page/view.php?id=2381590)_
+As a student at City, you can also get hold a free copy of the _Tableau Desktop_ visualization software use on your laptop or at home, to help you learn and to complete your coursework.<br/>Instructions are here - _[Tableau Desktop](https://moodle4.city.ac.uk/mod/page/view.php?id=824653)_
 
 #### Sign up ...
 
-You will need to sign up to access the tutorial - but this is a quick process and you can use the account that you create to access [Tableau Training Videos](https://moodle.city.ac.uk/mod/page/view.php?id=2381591) and other materials into the future.<br/>
+You will need to sign up to access the tutorial - but this is a quick process and you can use the account that you create to access [Tableau Training Videos](https://moodle4.city.ac.uk/mod/page/view.php?id=824654) and other materials into the future.<br/>
 When registering, you may want to enter the postcode for _City, University of London_, which is ...
 
 - **EC1V 0HB**.
@@ -54,14 +54,14 @@ When registering, you may want to enter the postcode for _City, University of Lo
 
  </div>
 
-This activity should take you around **2-3 hours** - but you may need to spend more time experimenting with the various capabilities in the software.
+This activity should take you around **2-3 hours** - but you may need to spend more time experimenting with the various capabilities in the software. 
 
-Time spent getting comfortable with Tableau and its features _now_ will reap significant rewards later on as we make more use of Tableau through the module.
+Time spent getting comfortable with Tableau and its features _now_ will reap significant rewards later on as we make more use of Tableau through the module. So it's a good idea to invest plenty of time into this as early in term as possible.
 
-You should start the exercise in class and **must complete the work (and the checklist) before the next session**.
+You should start the exercise in class and **must complete the work (and the checklist) before the next session** (next week).
 
-Note that the tutorial uses a _business_ data set and enables you to create a '_Executive Overview Interactive Dashboard_'. However, the kinds of variables that you work with here are not unlike those we use to understand, analyse and visualize society - as we will see.
-So please stick with it and work through the tutorials step by step.
+Note that the tutorial uses a _business_ data set and enables you to create a '_Executive Overview Interactive Dashboard_' that shows _Profitability_. However, the kinds of variables that you work with here are not unlike those we use to understand, analyse and visualize society - as we will see.
+So please stick with it and work through the tutorials step by step even though the data do not necessarily deal with a phenomenon that is of particular interest.
 
 #### What you need to do ...
 
@@ -76,17 +76,17 @@ So please stick with it and work through the tutorials step by step.
 1. **watch** the [Getting Started](https://www.tableau.com/learn/tutorials/on-demand/getting-started) video
 
 1. **follow** by **trying each step** so that you do (and learn) the basics by using _Tableau Desktop_<br/>
-   _**IMPORTANT:**_ <span style="color:#b44"><em>do not use the cloud based version of Tableau - please do this work in your own local file space using</em></span> Tableau Desktop.\_
+   _**IMPORTANT:**_ <span style="color:#b44"><em>do not use the cloud based version of Tableau - please do this work in your own local file space using</em></span> _Tableau Desktop_.
    _You will need to frequently pause and replay the video to do exactly what is shown - copy what is going on and create the various graphics._
-   _You may find it helpful to watch each video in full before going through the slower, step-by-step process of completing each of the actions for yourself._ <br/>
+   _You may find it helpful to watch each video in full before going through the slower, step-by-step process of completing each of the actions for yourself. But make sure that you do go through the actions to recreate what you see on screen._ <br/>
 
-1. **record** your progress on the [checklist of concepts](https://moodle.city.ac.uk/mod/resource/view.php?id=2381621) below 👇 as you go, to ensure that you have engaged with each of the concepts and capabilities listed.<br/>
+1. **record** your progress on the [checklist of concepts](https://moodle4.city.ac.uk/mod/page/view.php?id=824679) below 👇 as you go, to ensure that you have engaged with each of the concepts and capabilities listed.<br/>
    _Explore a little - try things out!<br/>Use your initiative to vary things as you try the functionality and techniques_ <br/>
 
-1. **complete** the full set of [Getting Started Training Videos](https://www.tableau.com/learn/training/20224) in turn, **watching** and **doing** each of the steps in your own copy of _Tableau Desktop_ :
+1. **complete** the full set of [Getting Started Training Videos](https://www.tableau.com/learn/tutorials/on-demand/getting-started) in turn, **watching** and **doing** each of the steps in your own copy of _Tableau Desktop_ :
 
    1. [Getting Started](https://www.tableau.com/learn/tutorials/on-demand/getting-started) <code>1:00</code>
-   1. [Tableau Cloud](https://www.tableau.com/learn/tutorials/on-demand/getting-started-part2) <code>0:39</code>
+   1. [Tableau Cloud](https://www.tableau.com/learn/tutorials/on-demand/getting-started-part2) <code>1:00</code>
    1. [Connecting to Data](https://www.tableau.com/learn/tutorials/on-demand/getting-started-part3) <code>2:28</code>
    1. [The Workspace Area](https://www.tableau.com/learn/tutorials/on-demand/getting-started-part4) <code>2:17</code>
    1. [Map: Profit Ratio by Geography](https://www.tableau.com/learn/tutorials/on-demand/getting-started-part5) <code>2:22</code>
