@@ -1,0 +1,635 @@
+<!DOCTYPE html><html><head>
+      <title>sg2047.colour</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/jsndyks/.vscode/extensions/gicentre.markdown-preview-enhanced-with-litvis-0.30.2/node_modules/mume-with-litvis/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <link rel="stylesheet" href="https://jsndyks.github.io/sg2047/css/sg2047.css">
+<h3 class="mume-header" id="colour-schemes-and-visual-variables">Colour Schemes and Visual Variables</h3>
+
+<p><em>An example colour scheme and its description using Visual Variables ...</em></p>
+<h4 class="mume-header" id="1-colorbrewer">1. ColorBrewer</h4>
+
+<p>Let&apos;s consider a <a href="https://colorbrewer2.org/#type=sequential&amp;scheme=YlOrRd&amp;n=7">ColorBrewer</a> sequential scheme, that works well for <em>numeric</em> or <em>ordinal</em> data ... data with a <em>sequence</em>.</p>
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/img/colorBrewer.YlOrRd.7.png" style="width:300px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<p>The numbers here are the <em>Red</em>, <em>Green</em> and <em>Blue</em> components of the colour, all on a scale of 0-255. Colours are often defined in this way. But we need to define and describe them using the differentiable <em>visual variables</em> the <em>Hue</em>, <em>Saturation</em> and <em>Lightness</em> that combine to uniquely describe any colour, all colours.</p>
+<h4 class="mume-header" id="2-imagecolorpicker">2. Color Picker</h4>
+
+<p>We can find the <em>Hue</em>, <em>Saturation</em> and <em>Lightness</em> of the colours in an image with various tools, apps, websites and plugins.</p>
+<p>I suggest the <a href="https://pinetools.com/image-color-picker">PineTools : Online Image Color Picker</a> where you can select an image for analysis by <em>browsing</em> your file space or <em>dragging and dropping</em> an image into the web browser.</p>
+<p>This allows you to analyse screen dumps. You can also specify images by URL and check them that way.</p>
+<h4 class="mume-header" id="3-colour-visual-variables">3. Colour Visual Variables</h4>
+
+<p>Remember to check <i>Tobia Montanari's</i> thoughtful (and helpful) <a href="https://www.tobiamontanari.com/hsl-and-hsv-explained-which-color-model-should-you-use/">HSL and HSV Explained: Which Color Model Should You Use?</a>" article for an introduction to and reminder about the models that enable us to describe colours and their components.</p>
+
+<p>Here is what I get from <b>HSL</b> when I check the 7 colours from the image of the <a href="https://colorbrewer2.org/#type=sequential&amp;scheme=YlOrRd&amp;n=7">ColorBrewer YlOrRd</a> seven class scheme shown above - I screen dumped this.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">CLASS</th>
+<th style="text-align:right">COLOUR</th>
+<th style="text-align:center">HUE</th>
+<th style="text-align:center">LIGHTNESS</th>
+<th style="text-align:center">SATURATION</th>
+<th style="text-align:center">RGB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">1</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(255,255,178)"></td>
+<td style="text-align:center"><strong>61</strong></td>
+<td style="text-align:center"><strong>85</strong></td>
+<td style="text-align:center"><strong>100</strong></td>
+<td style="text-align:center"><code>rgb(255,255,178)</code></td>
+</tr>
+<tr>
+<td style="text-align:right">2</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(254,217,118)"></td>
+<td style="text-align:center"><strong>44</strong></td>
+<td style="text-align:center"><strong>73</strong></td>
+<td style="text-align:center"><strong>99</strong></td>
+<td style="text-align:center"><code>rgb(254,217,118)</code></td>
+</tr>
+<tr>
+<td style="text-align:right">3</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(254,178,76)"></td>
+<td style="text-align:center"><strong>34</strong></td>
+<td style="text-align:center"><strong>65</strong></td>
+<td style="text-align:center"><strong>98</strong></td>
+<td style="text-align:center"><code>rgb(254,178,76)</code></td>
+</tr>
+<tr>
+<td style="text-align:right">4</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(253,141,60)"></td>
+<td style="text-align:center"><strong>25</strong></td>
+<td style="text-align:center"><strong>62</strong></td>
+<td style="text-align:center"><strong>98</strong></td>
+<td style="text-align:center"><code>rgb(253,141,60)</code></td>
+</tr>
+<tr>
+<td style="text-align:right">5</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(252,78,42)"></td>
+<td style="text-align:center"><strong>10</strong></td>
+<td style="text-align:center"><strong>58</strong></td>
+<td style="text-align:center"><strong>97</strong></td>
+<td style="text-align:center"><code>rgb(252,78,42)</code></td>
+</tr>
+<tr>
+<td style="text-align:right">6</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(227,26,28)"></td>
+<td style="text-align:center"><strong>0</strong></td>
+<td style="text-align:center"><strong>50</strong></td>
+<td style="text-align:center"><strong>79</strong></td>
+<td style="text-align:center"><code>rgb(227,26,28)</code></td>
+</tr>
+<tr>
+<td style="text-align:right">7</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(177,0,38)"></td>
+<td style="text-align:center"><strong>347</strong></td>
+<td style="text-align:center"><strong>35</strong></td>
+<td style="text-align:center"><strong>100</strong></td>
+<td style="text-align:center"><code>rgb(177,0,38)</code></td>
+</tr>
+</tbody>
+</table>
+
+<h5 class="mume-header" id="hue">HUE</h5>
+
+<p>Remember that <strong>Hue</strong> is usually a number between 0 and 360. We can represent these as angles round a colour wheel, from 0 at the top (a red hue) round the rainbow and back to 359.</p>
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/img/sg2047.colorWheel.png" style="width:300px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<p>Here we add the numbers that represent the various <em>hues</em> - from 0-360.</p>
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/img/sg2047.colorWheel.seqential.YlOrBn.7.key.png" style="width:300px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<p>Let&apos;s think about a particular colour scheme that might be used to show data and how hue varies within it - the <a href="https://colorbrewer2.org/#type=sequential&amp;scheme=YlOrRd&amp;n=7">ColorBrewer YlOrRd</a> seven class scheme that we introduced above.<br>
+We can show the <em>hues</em> used in the colours as angles and positions on the colour wheel.</p>
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/img/sg2047.colorWheel.seqential.YlOrBn.7.points.png" style="width:300px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<p>So <strong>347</strong> is just 13 / 360 <em>Hue</em> increments, or <em>degrees</em>, different to zero! So, quite close, quite similar - just 4% of the way around the colour wheel from 0.</p>
+<p>What this shows is a <em>gentle hue progression</em>, in sequence from <em>Yellow</em> to <em>Orange</em> to <em>Red</em> in the seven colours used in the scheme ... hence the name of the colour scheme.</p>
+<p>So <em>Hue</em> does vary a little in this scheme. It does so <em>sequentially</em>, so that we can detect the <em>order</em>.</p>
+<h5 class="mume-header" id="lightness">LIGHTNESS</h5>
+
+<p>We can think of <em>value</em> and <em>lightness</em> and <em>luminance</em> and <em>brightness</em> as the same thing at this stage. You will see <em>HSL</em> and <em>HSV</em> and <em>HSB</em> descriptions of colour, and they do vary. But for now, let&apos;s consider the <em>lightness</em> numbers that I recorded above.</p>
+<p>How do they vary across the scheme?</p>
+<p>Well, let&apos;s create a graph!<br>
+The colours in the <a href="https://colorbrewer2.org/#type=sequential&amp;scheme=YlOrRd&amp;n=7">ColorBrewer YlOrRd</a> seven class scheme go from left (1, light yellow) to right (7, dark red) here.</p>
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/img/sg2047.colorGraph.satVal.YlOrRd.7.png" style="width:500px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<p>We can see that <em>value</em> or <em>brightness</em> or <em>lightness</em> decreases in order across the scheme, from mid 80s to mid 30s.</p>
+<p>So lightness and hue both vary consistently and sequentially in this scheme to give it a <em>visual order</em>.<br>
+Those are two consistent encodings used in a single scheme, and probably both used in any graphic in which it is employed to encode <em>the same data channel</em> - a <em>double encoding</em>.</p>
+<p>Let&apos;s try to show <em>lightness</em> on the colour wheel that we used to show the variations in <em>hue</em>.</p>
+<p>We can represent, or <em>encode</em> this in our colour wheel with <em>position</em>. Here the <em>darker</em> colours are closer to the centre of the wheel.</p>
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/img/sg2047.colorWheel.sequential.YlOrRd.7.pointShift.png" style="width:300px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<p>Here the <em>hues</em> are shown on a colour wheel with seven rings that show the seven hues used with seven different levels of <em>lightness</em>.</p>
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/img/sg2047.colorWheel.sequential.YlOrRd.7.wheels.png" style="width:300px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<p>If we add an <em>annotation</em>, linking the <em>hues</em> in the order in which they are used in the colour scheme, then we can see the order of the hues quite clearly. There is a sequence, a visual logic.</p>
+ <div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/img/sg2047.colorWheel.sequential.YlOrRd.7.lines.png" style="width:300px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+
+<h5 class="mume-header" id="saturation">SATURATION - HSL</h5>
+
+<p>How about <em>saturation</em> - the <em>richness</em> or <em>chroma</em> of a colour that varies from high values that are highly saturated to low values that are pastel and washed out.</p>
+<p>Well the graph &#x1F446; and table above show little consistent variation in saturation as defined through <b>HSL</b>.
+  When described using <b>HSL</b>, these are fully <em>saturated</em> colours with just one (slightly strange, seemingly inconsistent) variation in the colour used for class 6.</p>
+<p>So it doesn't look as though <em>saturation</em> is being used to encode here - it hardly varies.</p>
+<p>Here is the <a href="https://colorbrewer2.org/#type=sequential&amp;scheme=YlOrRd&amp;n=7">ColorBrewer YlOrRd</a> seven class scheme.</p>
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/img/sg2047.colorScheme.sat.98.png" style="width:500px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<p>The <strong>top row</strong> defines colours with the original values for <em>Hue</em>, <em>Lightness</em> and <em>Saturation</em>.</p>
+<p>The <strong>bottom row</strong> shows the same <em>Hue</em>, and <em>Lightness</em> as in the original, but keeps <em>Saturation</em> constant at 98% under the <b>HSL</b> model.
+  The only difference that I can detect is for <em>class 6</em> where the dark red hue seems to stand out. Look - the sequence from <em>class 5</em> to <em>class 7</em> does not seem constant. The colour for <em>class 6</em> is a bit full on!</p>
+<p>This probably explains why cartographers, like <a href="https://www.geog.psu.edu/directory/cynthia-brewer">Cindy Brewer</a>, who is a <em>Professor of Geography</em> and <em>Penn State University</em> adjust colour schemes so that they vary in ways that we perceive to be continuous, even if this results in some discontinuities in the way that the visual variables of colour are applied.</p>
+<p>Just to show what variation in <em>saturation</em> looks like, here is a graphic showing the original scheme again, in the <em>middle</em> row, and two schemes that vary only in <em>saturation</em> under <b>HSL</b>.</p>
+<p>The two rows either side of this take the <em>first</em> (top) and <em>final</em> (bottom) colour in the sequence and vary the <em>saturation</em> consistently in the <b>HSL</b> colour description while keeping <em>hue</em> and <em>lightness</em> constant across the row of colours.</p>
+<p>In the <em>top</em> row, <em>saturation</em> changes from a maximum in <em>class 7</em> on the right, through to a minimum in <em>class 1</em> to the left.</p>
+<p>In the <em>bottom</em> row, <em>saturation</em> changes from a maximum in <em>class 1</em> on the left, through to a minimum in <em>class 7</em> to the right.</p>
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/img/sg2047.colorScheme.sat.varies.png" style="width:500px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<p>This should help you see the effects of varying the <em>saturation</em> of a single colour under <b>HSL</b>.</p>
+
+<h5 class="mume-header" id="saturation">SATURATION - HSV</h5>
+
+<p>If we consider the <b>HSV</b> model, we see more variation in <i>saturation</i> than is revealed by <b>HSL</b> and less variation in <i>lightness</i> - but both vary consistently.</p>
+
+<p>The following table shows the numbers returned from the <a href="https://pinetools.com/image-color-picker">PineTools : Online Image Color Picker</a> for the same <a href="https://colorbrewer2.org/#type=sequential&amp;scheme=YlOrRd&amp;n=7">ColorBrewer</a> sequential scheme, with the <b>HSV</b> numbers that are reported and considered above. But in <b>bold</b> we have the <i>lightness</i> and <i>saturation</i> numbers returned under the <b>HSL</b> colour model.</p>
+
+<!--- HSV -->
+<table>
+<thead>
+<tr>
+<th style="text-align:right">CLASS</th>
+<th style="text-align:right">COLOUR</th>
+<th style="text-align:center">HUE</th>
+<th style="text-align:center">LIGHTNESS</th>
+<th style="text-align:center">SATURATION</th>
+<th style="text-align:center">RGB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">1</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(255,255,178)"></td>
+<td style="text-align:center"><strong>61</strong></td>
+<td style="text-align:center">85 / <strong>100</strong></td>
+<td style="text-align:center">100 / <strong>30</strong></td>
+<td style="text-align:center"><code>rgb(255,255,178)</code></td>
+</tr>
+<tr>
+<td style="text-align:right">2</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(254,217,118)"></td>
+<td style="text-align:center"><strong>44</strong></td>
+<td style="text-align:center">73 / <strong>100</strong></td>
+<td style="text-align:center">99 / <strong>54</strong></td>
+<td style="text-align:center"><code>rgb(254,217,118)</code></td>
+</tr>
+<tr>
+<td style="text-align:right">3</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(254,178,76)"></td>
+<td style="text-align:center"><strong>34</strong></td>
+<td style="text-align:center">65 / <strong>100</strong></td>
+<td style="text-align:center">98 / <strong>70</strong></td>
+<td style="text-align:center"><code>rgb(254,178,76)</code></td>
+</tr>
+<tr>
+<td style="text-align:right">4</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(253,141,60)"></td>
+<td style="text-align:center"><strong>25</strong></td>
+<td style="text-align:center">62 / <strong>99</strong></td>
+<td style="text-align:center">98 / <strong>76</strong></td>
+<td style="text-align:center"><code>rgb(253,141,60)</code></td>
+</tr>
+<tr>
+<td style="text-align:right">5</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(252,78,42)"></td>
+<td style="text-align:center"><strong>10</strong></td>
+<td style="text-align:center">58 / <strong>99</strong></td>
+<td style="text-align:center">97 / <strong>83</strong></td>
+<td style="text-align:center"><code>rgb(252,78,42)</code></td>
+</tr>
+<tr>
+<td style="text-align:right">6</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(227,26,28)"></td>
+<td style="text-align:center"><strong>0</strong></td>
+<td style="text-align:center">50 / <strong>89</strong></td>
+<td style="text-align:center">79 / <strong>88</strong></td>
+<td style="text-align:center"><code>rgb(227,26,28)</code></td>
+</tr>
+<tr>
+<td style="text-align:right">7</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(177,0,38)"></td>
+<td style="text-align:center"><strong>347</strong></td>
+<td style="text-align:center">35 / <strong>69</strong></td>
+<td style="text-align:center">100 / <strong>100</strong></td>
+<td style="text-align:center"><code>rgb(177,0,38)</code></td>
+</tr>
+</tbody>
+</table>
+<!--- HSV --->
+
+<P>So we can see a gentle reduction in lightness - though the first five colours are all very light and pretty much indistinguishable in their lightness - but a steady increase in saturation.</P>
+
+<p>Ordinarily we would use a single colour model to describe the colours in a graphic - <b>HSL</b> or <b>HSV</b>. But it does seem to me that it helps us detect variations in these colour components in meaningful ways if we ...</p>
+
+<ul>
+  <li></li>
+  <li>use <b>HSL</b> to detect changes in <b>lightness</b> across a colour scheme</li>
+  <li>use <b>HSV</b> to detect changes in <b>saturation</b> across a colour scheme</li>
+</ul>
+
+<p>This will give you a sense of how these colour components vary as colour is applied to data graphics.</p>
+
+<h5 class="mume-header" id="qualitative-schemes">Qualitative Schemes</h5>
+
+<p>Let&apos;s briefly consider <em>qualitative</em> schemes in contrast.</p>
+<p>These colour schemes, such as the <a href="https://colorbrewer2.org/#type=qualitative&amp;scheme=Accent&amp;n=7">ColorBrewer Accent7</a> scheme hues vary across the spectrum and not in an order that we can detect.</p>
+<p>This explains why they work for <em>nominal</em> data, data that show difference, but that do not have a <em>sequence</em>.</p>
+<p>Here are the descriptions of the colours in <a href="https://colorbrewer2.org/#type=qualitative&amp;scheme=Accent&amp;n=7">ColorBrewer Accent7</a> in <b>HSL</b>.<br/>(<b>HSV</b> numbers are provided too in the lighter font, just to show that there is no consistent pattern here either - just variation, but we will focus on <b>HSL</b> below.)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">CLASS</th>
+<th style="text-align:right">COLOUR</th>
+<th style="text-align:center">HUE</th>
+<th style="text-align:center">LIGHTNESS</th>
+<th style="text-align:center">SATURATION</th>
+<th style="text-align:center">RGB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">1</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(127,201,127)"></td>
+<td style="text-align:center"><strong>121</strong></td>
+<td style="text-align:center"><strong>64</strong> / 79</td>
+<td style="text-align:center"><strong>41</strong> / 37</td>
+<td style="text-align:center"><code>rgb(127,201,127)</code></td>
+</tr>
+<tr>
+<td style="text-align:right">2</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(190,174,212)"></td>
+<td style="text-align:center"><strong>265</strong></td>
+<td style="text-align:center"><strong>76</strong> / 83</td>
+<td style="text-align:center"><strong>31</strong> / 18</td>
+<td style="text-align:center"><code>rgb(190,174,212)</code></td>
+</tr>
+<tr>
+<td style="text-align:right">3</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(253,192,134)"></td>
+<td style="text-align:center"><strong>29</strong></td>
+<td style="text-align:center"><strong>76</strong> / 99</td>
+<td style="text-align:center"><strong>97</strong> / 47</td>
+<td style="text-align:center"><code>rgb(253,192,134)</code></td>
+</tr>
+<tr>
+<td style="text-align:right">4</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(255,255,153)"></td>
+<td style="text-align:center"><strong>60</strong></td>
+<td style="text-align:center"><strong>80</strong> / 100</td>
+<td style="text-align:center"><strong>100</strong> / 40</td>
+<td style="text-align:center"><code>rgb(255,255,153)</code></td>
+</tr>
+<tr>
+<td style="text-align:right">5</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(56,108,176)"></td>
+<td style="text-align:center"><strong>214</strong></td>
+<td style="text-align:center"><strong>46</strong> / 69</td>
+<td style="text-align:center"><strong>52</strong> / 68</td>
+<td style="text-align:center"><code>rgb(56,108,176)</code></td>
+</tr>
+<tr>
+<td style="text-align:right">6</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(240,2,127)"></td>
+<td style="text-align:center"><strong>328</strong></td>
+<td style="text-align:center"><strong>47</strong> / 94</td>
+<td style="text-align:center"><strong>99</strong> / 99</td>
+<td style="text-align:center"><code>rgb(240,2,127)</code></td>
+</tr>
+<tr>
+<td style="text-align:right">7</td>
+<td style="text-align:right"><img src="https://jsndyks.github.io/sg2047/img/blank.gif" width="125" height="15" style="background-color:rgb(191,91,23)"></td>
+<td style="text-align:center"><strong>25</strong></td>
+<td style="text-align:center"><strong>42</strong> / 75</td>
+<td style="text-align:center"><strong>79</strong> / 88</td>
+<td style="text-align:center"><code>rgb(191,91,23)</code></td>
+</tr>
+</tbody>
+</table>
+<p>Let&apos;s look at how <em>value</em> and <em>saturation</em> vary on the graph!<br>
+The colours in the <a href="https://colorbrewer2.org/#type=qualitative&amp;scheme=Accent&amp;n=7">ColorBrewer Accent7</a> seven class scheme go from left (1, green) to right (7, brown) here.</p>
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/img/sg2047.colorGraph.satVal.Accent.7.png" style="width:500px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<p>We can see that there is no consistent ordered variation in <em>lightness</em> and <em>saturation</em>. They are all over the place and vary a fair amount.</p>
+<p>Here&apos;s what the wheel looks like with the <em>hues</em> in <a href="https://colorbrewer2.org/#type=qualitative&amp;scheme=Accent&amp;n=7">ColorBrewer Accent7</a>.</p>
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/img/sg2047.colorWheel.qualitative.Accent.7.png" style="width:300px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<p>The <em>hues</em> are well spread across the range to make them distinguishable, other than the colours for classes <strong>3</strong> and <strong>7</strong>, which use similar <em>hues</em> (29 and 25) but vary <em>lightness</em> (76 and 47) to ensure that the colours are <em>differentiable</em>.</p>
+<p>There is a risk that the reader will <em>associate</em> these colours as they may detect the similarity of <em>hue</em>.</p>
+<p>Here we show the darker colours, where <em>lightness</em> values are lower, towards the centre of the wheel.</p>
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/img/sg2047.colorWheel.qualitative.Accent.7.pointShift.png" style="width:300px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<p>Adding rings that show variations in <em>lightness</em> (according to <b>HSL</b>) for each hue demonstrates how a single hue can produce different colours as <em>lightness</em> is varied. It confirms the variations in <em>lightness</em> as the colours that we see in these wheels are close to the colours used in the <a href="https://colorbrewer2.org/#type=qualitative&amp;scheme=Accent&amp;n=7">ColorBrewer Accent7</a> scheme - the colours that use a very similar <em>hue</em>.</p>
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/img/sg2047.colorWheel.qualitative.Accent.7.wheels.png" style="width:300px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<p>This enables us to differentiate the colours from classes 3 and 7 used in <a href="https://colorbrewer2.org/#type=qualitative&amp;scheme=Accent&amp;n=7">ColorBrewer Accent7</a>.</p>
+<p>Note that the colours we see in the rings are not quite the same as those in the colour scheme. Can you explain why? Well ... there is one other component of colour that changes in the scheme, and here we are only <em>varying</em> hue and <em>lightness</em>!</p>
+<p>I mentioned <em>order</em> above, and we saw how the <a href="https://colorbrewer2.org/#type=sequential&amp;scheme=YlOrRd&amp;n=7">ColorBrewer YlOrRd</a> seven class scheme varies two of the components of colour in an ordered sequence.</p>
+<p>Well, let&apos;s see how the colours of <a href="https://colorbrewer2.org/#type=qualitative&amp;scheme=Accent&amp;n=7">ColorBrewer Accent7</a> are ordered in the wheel.</p>
+<div style="align:center">
+<img src="https://jsndyks.github.io/sg2047/img/sg2047.colorWheel.qualitative.Accent.7.lines.png" style="width:300px; padding:0.5em; border:1px solid #e0e0e0">
+</div>
+<p>You can see that the line that links the colours in order moves all over the place. There is no sequence across this colour wheel and so we see no sequence in the colours of the scheme. Remember that <em>hue</em> is not regarded as a visual variable that is <em>ordered</em>, so we don&apos;t usually use it to represent <em>ordinal</em> data.</p>
+<p>But, as ever, there are exceptions - see <a href="https://colorbrewer2.org/#type=sequential&amp;scheme=YlOrRd&amp;n=7">ColorBrewer YlOrRd</a> above!</p>
+<hr>
+<p><strong>Jason Dykes</strong> &#xA0;<br>
+04/03/25</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
