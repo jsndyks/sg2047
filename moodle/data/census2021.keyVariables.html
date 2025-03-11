@@ -12,7 +12,7 @@
     .censusTitle {text-align:right; font-weight:bold; color:#666; padding:4px}
     .censusURL {}
     .censusTableTable,table {vertical-align:top; background-color:#eee;}
-
+    td {font-size:80%}
     </style>
 </head>
 <body style="font-family: Verdana, Geneva, Tahoma, sans-serifs; background-color: #fefefe; padding:2em">
@@ -20,22 +20,23 @@
         Pasted from  cols S-X of census2021.london.LSOAs.Vars
  --->
 
- <h4><b>SG2047</b> : DATA UPDATE - Census 2021 Key Variables for London LSOAs - Explained</h4>
+ <h4><b>SG2047</b> : Census 2021 Key Variables for London - Explained</h4>
 
- <p style="padding:4px;margin:4px">We are using a series of <b>Key Variable</b>s extracted from the recently released Census 2021 tables for Coursework Task 2.<br/>
-    Please use these variables and the Census 2021 data from now on.</p>
+    <p style="padding:4px;margin:4px">We are using a series of <b>Key Variable</b>s extracted from the Census 2021 tables for London.</p>
+
+    <p style="padding:4px;margin:4px">The first <em>five</em> variables are <b>totals</b>, the <em>sixth</em> - k007 - is a <b>density</b> (total population per unit area), the rest are <b>percentages</b> that use the listed, appropriate denominator form the first <em>five</em> variables.</p>
 
     <p style="padding:4px;margin:4px"><b>Key Variable</b> names and descriptions, along with links to the ONS Census tables used to create the data set.<br/>
     The <em>Variables</em> listed are those from the ONS Census Tables used to calculate the <b>Key Variable</b> in each case.</p>
 
     <p style="padding:4px;margin:4px">You will need to scroll to the right to see all of the details for each <b>Key Variable</b> 👉</p>
-    <p style="padding:4px;margin:4px;padding-bottom:1em">Access the ONS Census tables for more details about what each variable means.</p>
+    <p style="padding:4px;margin:4px;padding-bottom:1em">Access the ONS Census tables (follow the links) for more details about what each variable means.</p>
 
     <div class="censusTable" style="padding:4px;margin:4px">
 
     <table cellpadding=0 cellspacing=0 border=0>
 
-    <tr style='background-color:#f8f888'><th nowrap>KeyVar #</th>	<th>Name</th>	<th>2011 Key Stats Details</th>	<th>Census Table</th>	<th>Variables</th>	<th>Variable Details</th></tr>
+    <tr style='background-color:#f8f888'><th nowrap>KeyVar #</th>	<th>Name</th>	<th>Key Stats Details</th>	<th>Census Table</th>	<th>Variables</th>	<th>Variable Details</th></tr>
     <tr class='censusRow' style='background-color:#f8f8f8'><td class='censusVarNum'></td>	<td class='censusTitle'>TotPop</td>	<td class='censusVarDescription' nowrap>Total Population</td>	<td class='censusTable'>population</td>	<td class='censusVariable'>population</td>	<td class='censusURL' nowrap><a href='https://www.ons.gov.uk/datasets/TS006/'>TS006</a> - <span class='censusTabDescription'>Population density (number of usual residents per square kilometre).</span></td></tr>
     <tr class='censusRow' style='background-color:#fefefe'><td class='censusVarNum'></td>	<td class='censusTitle'>TotHou</td>	<td class='censusVarDescription' nowrap>Total Number of Households</td>	<td class='censusTable'>households</td>	<td class='censusVariable'>households</td>	<td class='censusURL' nowrap><a href='https://www.ons.gov.uk/datasets/TS041/'>TS041</a> - <span class='censusTabDescription'>Number of households. Estimates are as at Census Day, 21 March 2021</span></td></tr>
     <tr class='censusRow' style='background-color:#f8f8f8'><td class='censusVarNum'></td>	<td class='censusTitle'>Pop16plus</td>	<td class='censusVarDescription' nowrap>Total Population aged 16 and over</td>	<td class='censusTable'>age</td>	<td class='censusVariable'>16-100</td>	<td class='censusURL' nowrap><a href='https://www.ons.gov.uk/datasets/TS007/'>TS007</a> - <span class='censusTabDescription'>Usual residents classified by single year of age.</span></td></tr>
@@ -58,8 +59,8 @@
     <tr class='censusRow' style='background-color:#fefefe'><td class='censusVarNum'>k021</td>	<td class='censusTitle'>k021_BornOldEU/Pop</td>	<td class='censusVarDescription' nowrap>Persons whose country of birth is in the old EU (pre 2004 accession countries)</td>	<td class='censusTable'>regionOfBirth</td>	<td class='censusVariable'>2</td>	<td class='censusURL' nowrap><a href='https://www.ons.gov.uk/datasets/TS004/'>TS004</a> - <span class='censusTabDescription'>Usual residents classified by region of birth.</span></td></tr>
     <tr class='censusRow' style='background-color:#f8f8f8'><td class='censusVarNum'>k022</td>	<td class='censusTitle'>k022_BornNewEU/Pop</td>	<td class='censusVarDescription' nowrap>Persons whose country of birth is in the new EU (post 2004 accession countries)</td>	<td class='censusTable'>regionOfBirth</td>	<td class='censusVariable'>3,4</td>	<td class='censusURL' nowrap><a href='https://www.ons.gov.uk/datasets/TS004/'>TS004</a> - <span class='censusTabDescription'>Usual residents classified by region of birth.</span></td></tr>
     <tr class='censusRow' style='background-color:#fefefe'><td class='censusVarNum'>k023</td>	<td class='censusTitle'>k023_NoEngLang/Pop</td>	<td class='censusVarDescription' nowrap>Main language is not English and cannot speak English well or at all</td>	<td class='censusTable'>ukLanguage</td>	<td class='censusVariable'>4,5</td>	<td class='censusURL' nowrap><a href='https://www.ons.gov.uk/datasets/TS029/'>TS029</a> - <span class='censusTabDescription'>Usual residents aged 3 years and over in England and Wales classified by their proficiency in English.</span></td></tr>
-    <tr class='censusRow' style='background-color:#f8f8f8'><td class='censusVarNum'>k024</td>	<td class='censusTitle'>k024_HouNoChld/Hou</td>	<td class='censusVarDescription' nowrap>Households with no children</td>	<td class='censusTable'>householdComposition</td>	<td class='censusVariable'>4,7</td>	<td class='censusURL' nowrap><a href='https://www.ons.gov.uk/datasets/TS003/'>/TS00</a> - <span class='censusTabDescription'>Households are classified by the relationships between household members</span></td></tr>
-    <tr class='censusRow' style='background-color:#fefefe'><td class='censusVarNum'>k025</td>	<td class='censusTitle'>k025_HouNonDepChld/Hou</td>	<td class='censusVarDescription' nowrap>Households with non-dependant children</td>	<td class='censusTable'>householdComposition</td>	<td class='censusVariable'>6,9,11</td>	<td class='censusURL' nowrap><a href='https://www.ons.gov.uk/datasets/TS003/'>/TS00</a> - <span class='censusTabDescription'>Households are classified by the relationships between household members</span></td></tr>
+    <tr class='censusRow' style='background-color:#f8f8f8'><td class='censusVarNum'>k024</td>	<td class='censusTitle'>k024_HouNoChld/Hou</td>	<td class='censusVarDescription' nowrap>Households with no children</td>	<td class='censusTable'>householdComposition</td>	<td class='censusVariable'>4,7</td>	<td class='censusURL' nowrap><a href='https://www.ons.gov.uk/datasets/TS003/'>TS003</a> - <span class='censusTabDescription'>Households are classified by the relationships between household members</span></td></tr>
+    <tr class='censusRow' style='background-color:#fefefe'><td class='censusVarNum'>k025</td>	<td class='censusTitle'>k025_HouNonDepChld/Hou</td>	<td class='censusVarDescription' nowrap>Households with non-dependant children</td>	<td class='censusTable'>householdComposition</td>	<td class='censusVariable'>6,9,11</td>	<td class='censusURL' nowrap><a href='https://www.ons.gov.uk/datasets/TS003/'>TS003</a> - <span class='censusTabDescription'>Households are classified by the relationships between household members</span></td></tr>
     <tr class='censusRow' style='background-color:#f8f8f8'><td class='censusVarNum'>k026</td>	<td class='censusTitle'>k026_HouStd/Hou</td>	<td class='censusVarDescription' nowrap>Households with full-time students</td>	<td class='censusTable'>accommodation</td>	<td class='censusVariable'>5</td>	<td class='censusURL' nowrap><a href='https://www.ons.gov.uk/datasets/TS044/'>TS044</a> - <span class='censusTabDescription'>Households are classified by accommodation type.</span></td></tr>
     <tr class='censusRow' style='background-color:#fefefe'><td class='censusVarNum'>k027</td>	<td class='censusTitle'>k027_HouDet/Hou</td>	<td class='censusVarDescription' nowrap>Households who live in a detached house or bungalow</td>	<td class='censusTable'>accommodation</td>	<td class='censusVariable'>1</td>	<td class='censusURL' nowrap><a href='https://www.ons.gov.uk/datasets/TS044/'>TS044</a> - <span class='censusTabDescription'>Households are classified by accommodation type.</span></td></tr>
     <tr class='censusRow' style='background-color:#f8f8f8'><td class='censusVarNum'>k028</td>	<td class='censusTitle'>k028_HouSem/Hou</td>	<td class='censusVarDescription' nowrap>Households who live in a semi-detached house or bungalow</td>	<td class='censusTable'>accommodation</td>	<td class='censusVariable'>2</td>	<td class='censusURL' nowrap><a href='https://www.ons.gov.uk/datasets/TS044/'>TS044</a> - <span class='censusTabDescription'>Households are classified by accommodation type.</span></td></tr>
@@ -112,9 +113,10 @@
     <tr class='censusRow' style='background-color:#fefefe'><td class='censusVarNum'>k129</td>	<td class='censusTitle'>k129_ReligionNoAnswer/Pop</td>	<td class='censusVarDescription' nowrap>Religion no answer</td>	<td class='censusTable'>religion</td>	<td class='censusVariable'>9</td>	<td class='censusURL' nowrap><a href='https://www.ons.gov.uk/datasets/TS030/'>TS030</a> - <span class='censusTabDescription'>Usual residents classified by religion</span></td></tr>
 
     </table>
-<hr/>
-Jason <b>Dykes</b><br/>
-05/04/2023
-&nbsp;
+    <hr/>
+    Jason <b>Dykes</b><br/>
+    <!-- 05/04/2023 -->
+    11/03/2025
+    &nbsp;
     </div>
 </body>
